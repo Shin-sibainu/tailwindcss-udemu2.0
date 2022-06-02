@@ -24,7 +24,7 @@
     <!-- navigation -->
     <header class="py-6">
       <div
-        class="container flex justify-between mx-auto px-8 md:px-14 lg:px-24 w-full"
+        class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
       >
         <div class="text-lg font-bold">ShinCode.com</div>
         <div class="hidden md:flex items-center space-x-12">
@@ -48,8 +48,245 @@
       class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
       <div class="flex flex-wrap md:flex-nowrap">
-        <nav></nav>
+        <!-- nav-haveto-fixed-later -->
+        <!-- <nav class="inline-block lg:mr-24 lg:w-4 fixed xl:block">
+          <div
+            class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36"
+          >
+            <a
+              href="#"
+              class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body"
+            >
+              <span class="bg-black px-2 py-1 rounded-md ml-10">ホーム</span>
+            </a>
+          </div>
+        </nav> -->
+
+        <div
+          class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my-36"
+        >
+          <h1
+            class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left"
+          >
+            TailWindCSSで<br />
+            美しいサイトを<br />
+            作ります
+          </h1>
+
+          <div class="w-full flex justify-center md:justify-start"></div>
+          <button class="px-8 py-4 bg-theme font-bold rounded-lg mt-10">
+            <i class="fa-solid fa-rocket mr-1"></i>
+            <span>もっと見る</span>
+          </button>
+        </div>
+        <img
+          src="./images/man.png"
+          alt="man"
+          class="md:absolute md:w-3/5 w-3/4 mt-12 md:mt-0 right-6 -z-1"
+        />
       </div>
+    </div>
+
+    <!-- portfolio -->
+    <div
+      class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section class="w-full">
+        <h2 class="secondary-title">私のポートフォリオ</h2>
+        <p class="section-paragraph">
+          私が今まで作ってきたWebアプリケーションがこちら
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          <img
+            src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+            alt=""
+            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover cursor-pointer rounded-lg"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
+            alt=""
+            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
+            alt=""
+            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
+            alt=""
+            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+            alt=""
+            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
+            alt=""
+            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- clients -->
+    <div
+      class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section class="w-full">
+        <h2 id="clients" class="secondary-title">クライアント</h2>
+        <p class="section-paragraph">
+          私は100以上の会社の方と取引をしてきました
+        </p>
+        <div class="space-y-12 my-16">
+          <div
+            class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap"
+          >
+            <!-- client logo -->
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-brands fa-apple text-6xl"></i>
+            </div>
+
+            <!-- client info -->
+            <div
+              class="flex flex-wrap justify-center text-center lg:text-left lg:block"
+            >
+              <h3 class="text-white text-3xl font-semibold">Apple, Inc.</h3>
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
+              >
+                <div class="badge">UI/UX</div>
+                <div class="badge">フロントエンド開発</div>
+              </div>
+
+              <p class="text-secondary">
+                アップル社の製品をフロントエンド開発として手掛けてきました。納品のクオリティは保証します。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-12 my-16">
+          <div
+            class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap flex-re"
+          >
+            <!-- client logo -->
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-brands fa-apple text-6xl"></i>
+            </div>
+
+            <!-- client info -->
+            <div
+              class="flex flex-wrap justify-center text-center lg:text-left lg:block"
+            >
+              <h3 class="text-white text-3xl font-semibold">Apple, Inc.</h3>
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
+              >
+                <div class="badge">UI/UX</div>
+                <div class="badge">フロントエンド開発</div>
+              </div>
+
+              <p class="text-secondary">
+                アップル社の製品をフロントエンド開発として手掛けてきました。納品のクオリティは保証します。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-12 my-16">
+          <div
+            class="w-full border border-nav p-16 lg:px-32 lg:py-20 lg:space-x-32 flex justify-center lg:justify-start flex-wrap lg:flex-nowrap"
+          >
+            <!-- client logo -->
+            <div class="mb-6 lg:mb-0 self-center">
+              <i class="fa-brands fa-apple text-6xl"></i>
+            </div>
+
+            <!-- client info -->
+            <div
+              class="flex flex-wrap justify-center text-center lg:text-left lg:block"
+            >
+              <h3 class="text-white text-3xl font-semibold">Apple, Inc.</h3>
+              <div
+                class="w-full lg:w-auto flex flex-wrap justify-center lg:justify-start gap-3 mt-6 mb-8"
+              >
+                <div class="badge">UI/UX</div>
+                <div class="badge">フロントエンド開発</div>
+              </div>
+
+              <p class="text-secondary">
+                アップル社の製品をフロントエンド開発として手掛けてきました。納品のクオリティは保証します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- contact -->
+    <div
+      class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+    >
+      <section class="w-full">
+        <h2 class="secondary-title">お問い合わせ</h2>
+        <p class="section-paragraph">
+          私の経歴が気になる方はご一報ください。即時対応します。
+        </p>
+
+        <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-16">
+          <div class="space-y-12">
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold"
+                >お名前
+              </label>
+              <input
+                type="text"
+                class="w-full border border-input-border bg-input px-4 py-4"
+              />
+            </div>
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold"
+                >メールアドレス
+              </label>
+              <input
+                type="text"
+                class="w-full border border-input-border bg-input px-4 py-4"
+              />
+            </div>
+            <div>
+              <label class="text-white block mb-6 text-xl font-bold"
+                >メッセージ
+              </label>
+              <input
+                type="text"
+                class="w-full border border-input-border bg-input px-4 py-4"
+              />
+            </div>
+            <button class="px-6 py-2 bg-theme text-white font-bold rounded-md">
+              送信する
+            </button>
+          </div>
+          <div class="mt-12">
+            <!-- contact info -->
+            <p class="text-secondary">000-1111-2222</p>
+            <a href="mailto:email@shincode.com">shincode@gmail.com</a>
+            <!-- socials -->
+            <div class="flex mt-20 space-x-6">
+              <a href="#">
+                <i class="fa-brands fa-twitter text-3xl"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-facebook text-3xl"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram text-3xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
