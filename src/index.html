@@ -28,9 +28,21 @@
       >
         <div class="text-lg font-bold">ShinCode.com</div>
         <div class="hidden md:flex items-center space-x-12">
-          <a href="#home" class="text-selected-text">ホーム</a>
-          <a href="#portfolio">ポートフォリオ</a>
-          <a href="#blog">ブログ</a>
+          <a
+            href="#home"
+            class="hover:text-selected-text transition-all duration-300"
+            >ホーム</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:text-selected-text transition-all duration-300"
+            >ポートフォリオ</a
+          >
+          <a
+            href="#clients"
+            class="hover:text-selected-text transition-all duration-300"
+            >お客様</a
+          >
           <a href="#contact"
             ><button class="px-6 py-2 bg-theme font-bold rounded-lg">
               お問い合わせ
@@ -45,6 +57,7 @@
 
     <!-- hero -->
     <div
+      id="home"
       class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
       <div class="flex flex-wrap md:flex-nowrap">
@@ -80,15 +93,16 @@
           </button>
         </div>
         <img
-          src="./images/man.png"
-          alt="man"
-          class="md:absolute md:w-3/5 w-3/4 mt-12 md:mt-0 right-6 -z-1"
+          src="./images/human3.jpg"
+          alt="image"
+          class="md:absolute lg:w-3/6 lg:top-2 lg:right-52 md:w-3/5 w-10/12 mt-12 md:mt-0 right-6 -z-1 mx-auto"
         />
       </div>
     </div>
 
     <!-- portfolio -->
     <div
+      id="portfolio"
       class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
       <section class="w-full">
@@ -101,32 +115,32 @@
           <img
             src="https://images.unsplash.com/photo-1576153192396-180ecef2a715?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
             alt=""
-            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover cursor-pointer rounded-lg"
+            class="w-full bg-nav h-36 lg:h-72 object-cover"
           />
           <img
             src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
             alt=""
-            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+            class="w-full bg-nav h-36 lg:h-72 object-cover"
           />
           <img
             src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80"
             alt=""
-            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+            class="w-full bg-nav h-36 lg:h-72 object-cover"
           />
           <img
             src="https://images.unsplash.com/photo-1558655146-d09347e92766?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=764&q=80"
             alt=""
-            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+            class="w-full bg-nav h-36 lg:h-72 object-cover"
           />
           <img
             src="https://images.unsplash.com/photo-1547119957-637f8679db1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
             alt=""
-            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+            class="w-full bg-nav h-36 lg:h-72 object-cover"
           />
           <img
             src="https://images.unsplash.com/photo-1559028012-481c04fa702d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1336&q=80"
             alt=""
-            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover"
+            class="w-full bg-nav h-36 lg:h-72 object-cover"
           />
         </div>
       </section>
@@ -134,6 +148,7 @@
 
     <!-- clients -->
     <div
+      id="clients"
       class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
       <section class="w-full">
@@ -227,7 +242,8 @@
 
     <!-- contact -->
     <div
-      class="container mt-64 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
+      id="contact"
+      class="container mt-52 mb-20 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full"
     >
       <section class="w-full">
         <h2 class="secondary-title">お問い合わせ</h2>
@@ -264,7 +280,7 @@
                 class="w-full border border-input-border bg-input px-4 py-4"
               />
             </div>
-            <button class="px-6 py-2 bg-theme text-white font-bold rounded-md">
+            <button class="px-8 py-3 bg-theme text-white font-bold rounded-md">
               送信する
             </button>
           </div>
