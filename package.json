@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "start": "tailwindcss build -o tailwind.css"
+    "build": "tailwindcss build -o tailwind.css"
   },
   "keywords": [],
   "author": "",
