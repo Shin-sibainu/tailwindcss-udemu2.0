@@ -61,10 +61,11 @@
     "source-map-js": "^1.0.2",
     "reusify": "^1.0.4"
   },
-  "scripts": {},
+  "scripts": {
+    "start": "tailwindcss build -o tailwind.css"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": ""
 }
-
